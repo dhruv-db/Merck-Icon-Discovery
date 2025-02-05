@@ -1748,6 +1748,7 @@
     height: 100%; /* Make the container height 100% of its parent */
   }
   
+  
   .icon-filter-extension input[type="text"] {
     width: 100%;
     padding: 8px;
@@ -1762,6 +1763,7 @@
     margin-bottom: 10px;
   }
   
+  
   #icon-filter-buttons .filter-btn {
     margin-right: 5px;
     padding: 5px 10px;
@@ -1772,9 +1774,11 @@
   }
   
   #icon-filter-buttons .filter-btn.active {
-    background-color: #007bff;
-    color: #fff;
-  }
+    background-color: #503291;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid #eb3b97;
+}
   
   #icon-grid {
     display: grid;
