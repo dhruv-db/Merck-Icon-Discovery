@@ -1,0 +1,10 @@
+{
+  "name": "Miconsv2",
+  "description": "A Qlik Sense extension to search and filter icons in a grid layout.",
+  "version": "2.0",
+  "author": "db",
+  "icon": "extension-icon.png",
+  "type": "visualization",
+  "preview": "preview.png",
+  "tags": ["filter", "icons", "grid"]
+}
