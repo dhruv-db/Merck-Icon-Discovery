@@ -1782,13 +1782,13 @@
   
   #icon-grid {
     display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
-        grid-gap: 10px;
-        height: calc(100% - 60px);
-        width: calc(100% - 10px);
-        overflow-y: auto;
-        align-items: center;
-        justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(99px, 1fr));
+    grid-gap: 10px;
+    height: calc(100% - 60px);
+    width: calc(100% - 10px);
+    overflow-y: auto;
+    align-items: start;
+    justify-content: center;
   }
   
   .icon-item {

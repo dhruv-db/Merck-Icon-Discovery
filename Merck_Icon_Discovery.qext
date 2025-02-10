@@ -1,0 +1,16 @@
+{
+  "name": "/\\ Merck Icon Discovery",
+  "description": "A visual search hub to quickly find and explore Merck curated Qlik extensions through an intuitive icon-driven interface. 🔍",
+  "version": "2.0",
+  "author": "db",
+  "icon": "extension-icon.png",
+  "type": "visualization",
+  "preview": "/image/preview.png",
+  "tags": ["filter", "icons", "grid"],
+   "bundle": {
+      "id": "databridgebundle",
+      "name": "data/\\bridge",
+      "description": "Extension bundle of databridge"
+    }
+}
+
