@@ -71,8 +71,8 @@ define(["qlik", "jquery", "text!./styles.css", "text!./icons.json"], function (q
                     <input type="text" id="icon-search" placeholder="Search icons..." />
                     <div id="icon-filter-buttons">
                         <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="stroke">Stroke</button>
-                        <button class="filter-btn" data-filter="field">Field</button>
+                        <button class="filter-btn" data-filter="Stroke">Stroke</button>
+                        <button class="filter-btn" data-filter="Field">Field</button>
                         <button class="filter-btn" data-filter="normal">Regular</button>
                     </div>
                     <div id="icon-grid" class="scroll-container"></div>
