@@ -4,20 +4,20 @@ define(["qlik", "jquery", "text!./styles.css", "text!./icons.json"], function (q
     const icons = JSON.parse(iconsJson);
     
     function generateIconHTML(icon) {
-        let iconType = "Normal";
+        let iconType = "normal";
         let displayName = icon;
         let fullIconName = icon.toLowerCase();
 
-        if (icon.endsWith("-F")) {
-            iconType = "Field";
-            displayName = icon.slice(0, -2) + iconType;
-        } else if (icon.endsWith("-S")) {
-            iconType = "Stroke";
-            displayName = icon.slice(0, -2) + iconType;
+        if (icon.endsWith("-f")) {
+            iconType = "field";
+            displayName = icon.slice(0, -2) + "Filled";
+        } else if (icon.endsWith("-s")) {
+            iconType = "stroke";
+            displayName = icon.slice(0, -2) + "Stroke";
         }
 
         return `
-            <div class="icon-item" data-type="${fullIconName}" data-subtype="${iconType.toLowerCase()}" data-icon-name="${displayName}">
+            <div class="icon-item" data-type="${fullIconName}" data-subtype="${iconType}" data-icon-name="${displayName}">
                 <div class="icon icon-${fullIconName}"></div>
                 <span class="icon-title">${displayName}</span>
             </div>`;
@@ -71,8 +71,8 @@ define(["qlik", "jquery", "text!./styles.css", "text!./icons.json"], function (q
                     <input type="text" id="icon-search" placeholder="Search icons..." />
                     <div id="icon-filter-buttons">
                         <button class="filter-btn active" data-filter="all">All</button>
-                        <button class="filter-btn" data-filter="Stroke">Stroke</button>
-                        <button class="filter-btn" data-filter="Field">Field</button>
+                        <button class="filter-btn" data-filter="stroke">Stroke</button>
+                        <button class="filter-btn" data-filter="field">Field</button>
                         <button class="filter-btn" data-filter="normal">Regular</button>
                     </div>
                     <div id="icon-grid" class="scroll-container"></div>
